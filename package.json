@@ -1,0 +1,21 @@
+{
+  "name": "bibliotech",
+  "version": "1.0.0",
+  "description": "Coding Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.test.js",
+    "coverage": "instanbul cover _mocha index.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "moment": "^2.22.2",
+    "sequelize": "^4.38.0",
+    "sequelize-cli": "^4.0.0",
+    "sqlite3": "^4.0.0"
+  }
+}
