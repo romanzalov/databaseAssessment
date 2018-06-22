@@ -37,4 +37,84 @@ const Project = sequelize.define("project", {
   }
 });
 
+//Question 1
+Project.query("SELECT AVG(price) FROM date WHERE YEAR(happened_at) = 2013", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+
+Project.query("SELECT AVG(price) FROM date WHERE YEAR(happened_at) = 2014", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+
+Project.query("SELECT AVG(price) FROM date WHERE YEAR(happened_at) = 2015", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE YEAR(happened_at) = 2016", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE YEAR(happened_at) = 2017", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE YEAR(happened_at) = 2018", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+
+// Question 2
+
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 1", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 2", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 3", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 4", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 5", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 6", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 7", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 8", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 9", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 10", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 11", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+Project.query("SELECT AVG(price) FROM date WHERE MONTH(happened_at) = 12", { type: sequelize.QueryTypes.SELECT })
+  .then(data => {
+    console.log(data)
+  })
+
+
 module.exports = Project;
